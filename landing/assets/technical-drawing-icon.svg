@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <!-- Navy rounded-square tile with white border -->
+  <rect x="0.8" y="0.8" width="22.4" height="22.4" rx="3.4"
+        fill="#1A2A5E" stroke="#FFFFFF" stroke-width="1.1"/>
+  <!-- Inner drawing-sheet frame (sharp corners) -->
+  <rect x="4.8" y="3.6" width="14.4" height="16.8"
+        fill="none" stroke="#FFFFFF" stroke-width="1.1"/>
+  <!-- 8-spoke asterisk gear -->
+  <g stroke="#FFFFFF" stroke-width="1.1">
+    <!-- cardinal spokes -->
+    <path d="M12 7.7v3.3"/>
+    <path d="M12 13v3.3"/>
+    <path d="M7.7 12h3.3"/>
+    <path d="M13 12h3.3"/>
+    <!-- diagonal spokes -->
+    <path d="M8.96 8.96 10.8 10.8"/>
+    <path d="M13.2 13.2 15.04 15.04"/>
+    <path d="M15.04 8.96 13.2 10.8"/>
+    <path d="M10.8 13.2 8.96 15.04"/>
+  </g>
+  <!-- Center circle -->
+  <circle cx="12" cy="12" r="1.2" fill="none" stroke="#FFFFFF" stroke-width="1.1"/>
+  <!-- Horizontal ticks protruding past the frame edges -->
+  <path d="M2.1 12h3.2" fill="none" stroke="#FFFFFF" stroke-width="1.1"/>
+  <path d="M18.7 12h3.2" fill="none" stroke="#FFFFFF" stroke-width="1.1"/>
+</svg>

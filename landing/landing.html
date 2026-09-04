@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOLU Umzugservice – Ihr Umzug, unsere Stärke.</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Google Fonts: Montserrat (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Landing page styles -->
+  <link rel="stylesheet" href="css/landing.css?v=21">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg l-navbar">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/logo-landing.jpg" class="l-logo-img" alt="HOLU Umzugservice">
+      </a>
+
+      <div class="collapse navbar-collapse" id="lMainNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#leistungen">Diensten</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ablauf">Werkwijze</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ueberuns">Over ons</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontakt">Contact</a></li>
+        </ul>
+        <a href="#buchen" class="btn l-btn-orange l-btn-pill l-nav-cta">
+          <i class="bi bi-calendar3"></i>AFSPRAAK MAKEN
+        </a>
+      </div>
+
+      <button class="navbar-toggler l-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#lMainNav" aria-controls="lMainNav" aria-expanded="false" aria-label="Menü umschalten">
+        <i class="bi bi-list icon-open"></i>
+        <i class="bi bi-x-lg icon-close"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="l-hero">
+    <img src="assets/hero-landing.png" class="l-hero-bg" alt="HOLU Umzugservice Transporter">
+    <img src="assets/hero-mobile.png" class="l-hero-bg-mobile" alt="">
+    <div class="l-hero-overlay"></div>
+    <div class="container">
+      <div class="l-hero-inner">
+        <div class="row align-items-center gy-4">
+          <!-- Left copy -->
+          <div class="col-lg-7 l-hero-copy">
+            <span class="l-hero-eyebrow">SNEL, VAKKUNDIG &amp; BETROUWBAAR</span>
+            <h1 class="l-hero-title">
+              Uw glas,<br>
+              <span class="l-text-orange">onze zorg.</span>
+            </h1>
+            <p class="l-hero-lead">Gespecialiseerd in glasschade herstel en<br>verduurzaming van woningen en bedrijfspanden.</p>
+            <ul class="l-hero-checklist">
+              <li><i class="bi bi-check-circle"></i> Vrijblijvend advies &amp; opname op locatie</li>
+              <li><i class="bi bi-check-circle"></i> Snelle service – vaak binnen 24 uur</li>
+              <li><i class="bi bi-check-circle"></i> Erkend glaszetter met ervaring</li>
+              <li><i class="bi bi-check-circle"></i> Eigen glaslift voor veilig en efficiënt werk</li>
+            </ul>
+            <div class="l-hero-actions">
+              <a href="#buchen" class="btn l-btn-orange">
+                <span><i class="bi bi-calendar3 me-2"></i>PLAN DIRECT EEN AFSPRAAK</span>
+                <span class="l-cta-subtext">Vrijblijvend &amp; kosteloos</span>
+              </a>
+              <a href="tel:0612345678" class="btn l-btn-hero-outline">
+                <span><i class="bi bi-telephone me-2"></i>BEL ONS DIRECT</span>
+                <span class="l-phone-line">06 123 45 678</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right booking card -->
+          <div class="col-lg-5 d-flex justify-content-lg-end" id="buchen">
+            <div class="l-booking-card">
+              <h2 class="l-booking-title">Plan direct uw <span class="l-text-orange">vrijblijvende opname</span></h2>
+              <ul class="l-booking-checks">
+                <li><i class="bi bi-check-circle"></i> Binnen 24 uur een afspraak mogelijk</li>
+                <li><i class="bi bi-check-circle"></i> Vrijblijvend en kosteloos</li>
+                <li><i class="bi bi-check-circle"></i> Advies op maat</li>
+              </ul>
+
+              <form onsubmit="return false">
+                <div class="l-input-icon mb-3">
+                  <i class="bi bi-person"></i>
+                  <input type="text" class="form-control" placeholder="Uw naam">
+                </div>
+                <div class="l-input-icon mb-3">
+                  <i class="bi bi-telephone"></i>
+                  <input type="tel" class="form-control" placeholder="Telefoonnummer">
+                </div>
+                <div class="l-input-icon mb-3">
+                  <i class="bi bi-envelope"></i>
+                  <input type="email" class="form-control" placeholder="E-mail adres">
+                </div>
+                <div class="l-input-icon mb-3">
+                  <i class="bi bi-chat-left"></i>
+                  <select class="form-select">
+                    <option selected disabled>Wat is uw situatie?</option>
+                    <option>Glasschade herstel</option>
+                    <option>Verduurzaming</option>
+                    <option>Overig</option>
+                  </select>
+                </div>
+                <div class="l-input-icon mb-3">
+                  <i class="bi bi-calendar3"></i>
+                  <input type="text" class="form-control" placeholder="Voorkeursdatum" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+                </div>
+                <button type="submit" class="btn l-btn-orange w-100">
+                  <i class="bi bi-calendar3 me-2"></i>AFSPRAAK PLANNEN
+                </button>
+              </form>
+
+              <div class="l-form-note">
+                <i class="bi bi-check"></i> We nemen binnen 2 uur contact met u op
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ USP STRIP (overlaps hero) ============ -->
+  <section class="l-usp">
+    <div class="container">
+      <div class="l-usp-card">
+        <div class="row g-4">
+          <div class="col-6 col-lg-3">
+            <div class="l-usp-item">
+              <span class="l-usp-ico"><img src="assets/usp-award.png?v=3" alt="Erkend & verzekerd" class="l-usp-svg"></span>
+              <div>
+                <h3 class="l-usp-title">Erkend &amp; verzekerd</h3>
+                <p class="l-usp-desc">Wij werken volgens de hoogste normen</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="l-usp-item">
+              <span class="l-usp-ico"><img src="assets/usp-clock.png?v=3" alt="Snelle service" class="l-usp-svg"></span>
+              <div>
+                <h3 class="l-usp-title">Snelle service</h3>
+                <p class="l-usp-desc">Meestal binnen 24 uur<br>op locatie</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="l-usp-item">
+              <span class="l-usp-ico"><img src="assets/usp-thumbsup.png?v=3" alt="Duidelijke communicatie" class="l-usp-svg"></span>
+              <div>
+                <h3 class="l-usp-title">Duidelijke communicatie</h3>
+                <p class="l-usp-desc">Eerlijk advies en heldere offertes</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="l-usp-item">
+              <span class="l-usp-ico"><img src="assets/usp-shield.png?v=3" alt="Vakmanschap garantie" class="l-usp-svg"></span>
+              <div>
+                <h3 class="l-usp-title">Vakmanschap garantie</h3>
+                <p class="l-usp-desc">Kwaliteit waar u op kunt vertrouwen</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="l-services" id="leistungen">
+    <div class="container">
+      <span class="l-eyebrow">ONZE DIENSTEN</span>
+      <h2 class="l-section-title">Voor elk glasvraagstuk dé juiste oplossing</h2>
+      <p class="l-section-sub">Voor elk glasvraagstuk dé juiste oplossing</p>
+
+      <div class="row g-4">
+        <!-- Card 1: Glasschade herstel -->
+        <div class="col-lg-6">
+          <div class="l-service-card">
+            <div class="l-service-media">
+              <img src="assets/service-1.jpg" alt="Glasschade herstel">
+            </div>
+            <div class="l-service-body">
+              <img src="assets/technical-drawing-icon.svg" alt="" class="l-service-ico-svg">
+              <h3 class="l-service-title">Glasschade herstel</h3>
+              <p class="l-service-desc">Snelle en vakkundige herstel van alle glassoorten.</p>
+              <ul class="l-service-bullets">
+                <li><i class="bi bi-check"></i> Spoedservice mogelijk</li>
+                <li><i class="bi bi-check"></i> Alle glassoorten</li>
+                <li><i class="bi bi-check"></i> Afstemming met verzekering</li>
+              </ul>
+              <a href="#kontakt" class="l-service-link">Meer informatie <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Verduurzaming -->
+        <div class="col-lg-6">
+          <div class="l-service-card">
+            <div class="l-service-media">
+              <img src="assets/service-2.jpg" alt="Verduurzaming">
+            </div>
+            <div class="l-service-body">
+              <img src="assets/sustainability-icon.jpg" alt="" class="l-service-ico-svg">
+              <h3 class="l-service-title">Verduurzaming</h3>
+              <p class="l-service-desc">Wij maken uw woning of bedrijfspand energiezuiniger met HR glas.</p>
+              <ul class="l-service-bullets">
+                <li><i class="bi bi-check"></i> HR++ / HR+++ glas</li>
+                <li><i class="bi bi-check"></i> Advies op maat</li>
+                <li><i class="bi bi-check"></i> Subsidie mogelijkheden</li>
+              </ul>
+              <a href="#kontakt" class="l-service-link">Meer informatie <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK PROCESS ============ -->
+  <section class="l-steps" id="ablauf">
+    <div class="container">
+      <span class="l-eyebrow">ZO WERKEN WIJ</span>
+      <h2 class="l-section-title">Van afspraak tot oplossing in 4 stappen</h2>
+      <p class="l-section-sub">Van afspraak tot oplossing in 4 stappen</p>
+
+      <div class="l-steps-row mt-5">
+        <div class="l-step">
+          <div class="l-step-pair">
+            <span class="l-step-num">1</span>
+            <img src="assets/step-calendar.png?v=3" alt="" class="l-step-img">
+          </div>
+          <h3 class="l-step-title">Afspraak maken</h3>
+          <p class="l-step-desc">Plan eenvoudig online uw vrijblijvende opname.</p>
+        </div>
+        <span class="l-step-arrow"><i class="bi bi-chevron-right"></i></span>
+        <div class="l-step">
+          <div class="l-step-pair">
+            <span class="l-step-num">2</span>
+            <img src="assets/step-location.png?v=3" alt="" class="l-step-img">
+          </div>
+          <h3 class="l-step-title">Opname op locatie</h3>
+          <p class="l-step-desc">Wij komen bij u langs en bekijken de situatie. Vrijblijvend advies.</p>
+        </div>
+        <span class="l-step-arrow"><i class="bi bi-chevron-right"></i></span>
+        <div class="l-step">
+          <div class="l-step-pair">
+            <span class="l-step-num">3</span>
+            <img src="assets/step-quote.png?v=3" alt="" class="l-step-img">
+          </div>
+          <h3 class="l-step-title">Offerte op maat</h3>
+          <p class="l-step-desc">U ontvangt een duidelijke offerte zonder verplichtingen.</p>
+        </div>
+        <span class="l-step-arrow"><i class="bi bi-chevron-right"></i></span>
+        <div class="l-step">
+          <div class="l-step-pair">
+            <span class="l-step-num">4</span>
+            <img src="assets/step-check.png?v=3" alt="" class="l-step-img">
+          </div>
+          <h3 class="l-step-title">Vakkundige uitvoering</h3>
+          <p class="l-step-desc">Wij voeren het werk snel, netjes en professioneel voor u uit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE (dark navy) ============ -->
+  <section class="l-why" id="ueberuns">
+    <div class="container">
+      <span class="l-eyebrow">WAAROM KIEZEN VOOR VDH GLASSERVICE?</span>
+
+      <div class="row row-cols-2 row-cols-lg-5 g-4 mt-2">
+        <div class="col l-why-col">
+          <img src="assets/why-1.jpg?v=3" alt="Eigen Glaslift" class="l-why-img">
+          <h3 class="l-why-title">Eigen Glaslift</h3>
+          <p class="l-why-desc">Voor veilig plaatsen<br>van groot glas op<br>hoogte.</p>
+        </div>
+        <div class="col l-why-col">
+          <img src="assets/why-2.png?v=3" alt="Erkende Vakmensen" class="l-why-img">
+          <h3 class="l-why-title">Erkende Vakmensen</h3>
+          <p class="l-why-desc">Jarenlange ervaring<br>en specialistisch<br>vakmanschap.</p>
+        </div>
+        <div class="col l-why-col">
+          <img src="assets/why-3.png?v=3" alt="Volledige Ontzorging" class="l-why-img">
+          <h3 class="l-why-title">Volledige Ontzorging</h3>
+          <p class="l-why-desc">Van advies tot plaatsing,<br>wij regelen alles voor u.</p>
+        </div>
+        <div class="col l-why-col">
+          <img src="assets/why-4.png?v=3" alt="Regionale Dekking" class="l-why-img">
+          <h3 class="l-why-title">Regionale Dekking</h3>
+          <p class="l-why-desc">Actief in heel Nederland,<br>snel bij u in de buurt.</p>
+        </div>
+        <div class="col l-why-col">
+          <img src="assets/why-5.png?v=3" alt="Kwaliteit Gewaarborgd" class="l-why-img">
+          <h3 class="l-why-title">Kwaliteit Gewaarborgd</h3>
+          <p class="l-why-desc">Hoogwaardige materialen<br>en perfecte afwerking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="l-reviews" id="reviews">
+    <div class="container">
+      <span class="l-eyebrow">WAT ONZE KLANTEN ZEGGEN</span>
+
+      <div class="row g-4 mt-3">
+        <div class="col-lg-4">
+          <div class="l-review-card">
+            <div class="l-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="l-quote">"Snelle service en vakkundig geholpen na ruitbreuk. Binnen een dag hersteld!"</p>
+            <span class="l-review-author">– Mark, Amersfoort</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="l-review-card">
+            <div class="l-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="l-quote">"Fijn advies gekregen over HR++ glas. Professioneel en betrouwbaar bedrijf."</p>
+            <span class="l-review-author">– Sandra, Utrecht</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="l-review-card">
+            <div class="l-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="l-quote">"Van begin tot eind alles perfect geregeld. Zeker een aanrader!"</p>
+            <span class="l-review-author">– Peter, Apeldoorn</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="l-dots">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="l-footer" id="kontakt">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: brand wordmark + tagline + social -->
+        <div class="col-lg-4">
+          <div class="l-footer-brand">
+            <span class="l-brand-vdh">VDH</span><span class="l-brand-glass">Glasservice</span>
+          </div>
+          <p class="l-footer-tagline">Sterk in zorgvuldig werk!</p>
+          <p class="l-footer-desc">Uw specialist in het plaatsen, repareren en vervangen van ruiten, schuifpuien en alle kozijnen.</p>
+          <div class="l-social">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: quick links -->
+        <div class="col-6 col-lg-2">
+          <h4 class="l-footer-heading">SNEL NAAR</h4>
+          <ul class="l-footer-links">
+            <li><a href="#leistungen">Diensten</a></li>
+            <li><a href="#ablauf">Werkwijze</a></li>
+            <li><a href="#ueberuns">Over ons</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#kontakt">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: contact -->
+        <div class="col-6 col-lg-3">
+          <h4 class="l-footer-heading">CONTACT</h4>
+          <ul class="l-footer-contact">
+            <li><i class="bi bi-telephone"></i> 06 123 456 78</li>
+            <li><i class="bi bi-envelope"></i> info@vdhglasservice.nl</li>
+            <li><i class="bi bi-geo-alt"></i> Weststraat 123, over heel Nederland</li>
+          </ul>
+        </div>
+
+        <!-- Col 4: direct booking -->
+        <div class="col-lg-3">
+          <h4 class="l-footer-heading">DIRECT AFSPRAAK MAKEN</h4>
+          <p class="l-footer-cta-text">Plan vandaag nog een afspraak op het moment dat jou het beste uitkomt.</p>
+          <a href="#buchen" class="btn l-btn-orange w-100 l-footer-cta-btn">
+            <i class="bi bi-calendar3"></i>AFSPRAAK MAKEN
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-footer-bar">
+      <div class="container">
+        © 2026 VDH Glasservice
+        <span class="l-bar-sep">|</span>
+        <a href="#">Privacyverklaring</a>
+        <span class="l-bar-sep">|</span>
+        <a href="#">Algemene voorwaarden</a>
+        <span class="l-bar-sep">|</span>
+        <a href="#">Cookiebeleid</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
