@@ -31,11 +31,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, .l-section-title, .l-hero-title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', 'Inter', sans-serif;
   font-weight: 800;
   letter-spacing: -0.01em;
   color: var(--l-navy);
 }
+/* type scale: H1 Montserrat ExtraBold 800, H2 Bold 700, H3 SemiBold 600 */
+h2, .l-section-title { font-weight: 700; }
+h3 { font-weight: 600; }
 
 section { scroll-margin-top: 90px; }
 
@@ -46,8 +49,8 @@ section { scroll-margin-top: 90px; }
   background: var(--l-orange);
   border: 2px solid var(--l-orange);
   color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .02em;
   border-radius: 10px;
@@ -71,8 +74,8 @@ section { scroll-margin-top: 90px; }
   background: #000;
   border: 2px solid #000;
   color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .02em;
   border-radius: 10px;
@@ -393,8 +396,8 @@ section { scroll-margin-top: 90px; }
   object-fit: contain;
 }
 .l-usp-title {
-  font-family: 'Inter', sans-serif;
-  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   font-size: .86rem;
   color: var(--l-navy);
   letter-spacing: .01em;
@@ -478,8 +481,8 @@ section { scroll-margin-top: 90px; }
   object-fit: cover;
 }
 .l-service-title {
-  font-family: 'Inter', sans-serif;
-  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   font-size: 1.15rem;
   color: var(--l-navy);
   margin: 0 0 .45rem;
@@ -572,8 +575,8 @@ section { scroll-margin-top: 90px; }
   flex: 0 0 auto;
 }
 .l-step-title {
-  font-family: 'Inter', sans-serif;
-  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   font-size: .95rem;
   color: var(--l-navy);
   margin: 0 0 .35rem;
@@ -608,8 +611,8 @@ section { scroll-margin-top: 90px; }
 }
 .l-why-col { text-align: center; padding: 0 .5rem; }
 .l-why-title {
-  font-family: 'Inter', sans-serif;
-  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   font-size: .88rem;
   text-transform: uppercase;
   color: #fff;
