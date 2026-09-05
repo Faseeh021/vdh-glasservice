@@ -1,6 +1,6 @@
-/* ===================================================================
-   HOLU Umzugservice – landing page (VDH-style navy + orange design)
-   All classes prefixed "l-" – independent from css/styles.css
+﻿/* ===================================================================
+   HOLU Umzugservice â€“ landing page (VDH-style navy + orange design)
+   All classes prefixed "l-" â€“ independent from css/styles.css
    =================================================================== */
 :root {
   --l-orange: #F5821F;
@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, .l-section-title, .l-hero-title {
-  font-family: 'Montserrat', 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 800;
   letter-spacing: -0.01em;
   color: var(--l-navy);
@@ -46,7 +46,7 @@ section { scroll-margin-top: 90px; }
   background: var(--l-orange);
   border: 2px solid var(--l-orange);
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .02em;
@@ -66,31 +66,39 @@ section { scroll-margin-top: 90px; }
 }
 .l-btn-pill { border-radius: 999px; }
 
-/* dark translucent outlined button (hero secondary CTA) */
+/* solid black button (hero secondary phone CTA) with soft natural shadow */
 .l-btn-hero-outline {
-  background: rgba(14,32,56,.55);
-  border: 2px solid rgba(255,255,255,.45);
+  background: #000;
+  border: 2px solid #000;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .02em;
   border-radius: 10px;
   padding: .7rem 1.4rem;
+  box-shadow: 0 12px 28px rgba(14, 32, 56, .45), 0 3px 8px rgba(14, 32, 56, .3);
   transition: all .18s ease;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   gap: .15rem;
 }
-.l-btn-hero-outline:hover { background: rgba(14,32,56,.8); color: #fff; }
+.l-btn-hero-outline:hover,
+.l-btn-hero-outline:focus {
+  background: #1a1a1a;
+  border-color: var(--l-orange);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(14, 32, 56, .5), 0 2px 6px rgba(14, 32, 56, .35);
+}
 .l-btn-hero-outline .l-phone-line {
   font-size: .82rem;
   font-weight: 600;
   letter-spacing: 0;
   color: #fff;
 }
-.l-btn-hero-outline > i { color: var(--l-orange); font-size: 1rem; }
+/* icon sits inside a span, so target any descendant i */
+.l-btn-hero-outline i { color: var(--l-orange); font-size: 1rem; }
 
 /* ==================================================================
    NAVBAR (white, sticky)
@@ -117,7 +125,7 @@ section { scroll-margin-top: 90px; }
   border: none; color: var(--l-navy); font-size: 1.6rem; padding: 0 .3rem;
 }
 .l-navbar .navbar-toggler:focus { box-shadow: none; }
-/* hamburger only on mobile (< lg) – hidden on desktop */
+/* hamburger only on mobile (< lg) â€“ hidden on desktop */
 .l-navbar .l-hamburger {
   display: none;
   align-items: center; justify-content: center;
@@ -213,7 +221,7 @@ section { scroll-margin-top: 90px; }
 .l-hero-copy { color: #fff; }
 .l-hero-eyebrow {
   display: inline-block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: .78rem;
   letter-spacing: .2em;
@@ -289,12 +297,12 @@ section { scroll-margin-top: 90px; }
   width: min(100%, 440px); /* slimmer card, nudged right */
 }
 .l-booking-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 800;
-  font-size: 1.12rem;
+  font-size: 1.4rem;
   line-height: 1.3;
   color: var(--l-navy);
-  margin: 0 0 .5rem;
+  margin: 0 0 .6rem;
 }
 .l-booking-checks {
   list-style: none;
@@ -385,7 +393,7 @@ section { scroll-margin-top: 90px; }
   object-fit: contain;
 }
 .l-usp-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: .86rem;
   color: var(--l-navy);
@@ -399,8 +407,8 @@ section { scroll-margin-top: 90px; }
    ================================================================== */
 .l-eyebrow {
   display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
   font-size: .76rem;
   letter-spacing: .2em;
   text-transform: uppercase;
@@ -409,6 +417,7 @@ section { scroll-margin-top: 90px; }
   text-align: center;
 }
 .l-section-title {
+  font-family: 'Inter', sans-serif;
   font-size: clamp(1.5rem, 2.8vw, 2.1rem);
   text-align: center;
   letter-spacing: -0.01em;
@@ -425,7 +434,7 @@ section { scroll-margin-top: 90px; }
 /* ==================================================================
    SERVICES (light gray bg)
    ================================================================== */
-.l-services { background: var(--l-gray); padding: var(--l-section-pad) 0; }
+.l-services { background: #fff; padding: var(--l-section-pad) 0; }
 .l-service-card {
   background: #fff;
   border-radius: var(--l-radius-lg);
@@ -469,13 +478,13 @@ section { scroll-margin-top: 90px; }
   object-fit: cover;
 }
 .l-service-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: 1.15rem;
   color: var(--l-navy);
   margin: 0 0 .45rem;
 }
-.l-service-desc { font-size: .88rem; color: var(--l-muted); margin: 0 0 1rem; line-height: 1.5; }
+.l-service-desc { font-size: .88rem; font-weight: 400; color: var(--l-text); margin: 0 0 1rem; line-height: 1.5; }
 .l-service-bullets { list-style: none; padding: 0; margin: 0 0 1.2rem; }
 .l-service-bullets li {
   display: flex; align-items: center; gap: .55rem;
@@ -497,7 +506,7 @@ section { scroll-margin-top: 90px; }
 }
 .l-service-link {
   color: var(--l-orange);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: .8rem;
   letter-spacing: .05em;
@@ -510,9 +519,9 @@ section { scroll-margin-top: 90px; }
 .l-service-link:hover { color: var(--l-orange-dark); text-decoration: underline; }
 
 /* ==================================================================
-   WORK PROCESS – 4 steps with chevron arrows
+   WORK PROCESS â€“ 4 steps with chevron arrows
    ================================================================== */
-.l-steps { background: #fff; padding: var(--l-section-pad) 0; }
+.l-steps { background: var(--l-gray); padding: var(--l-section-pad) 0; }
 .l-steps-row {
   display: flex;
   align-items: stretch;
@@ -526,13 +535,19 @@ section { scroll-margin-top: 90px; }
   text-align: center;
   padding: 0 .35rem;
 }
-/* number circle + icon circle sit side by side, centered as a pair */
+/* number circle + icon circle sit side by side; an invisible counterweight
+   after the icon balances the number circle, so the ICON (not the pair)
+   sits on the column's center axis and the text centers under the icon */
 .l-step-pair {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
   margin-bottom: 1rem;
+}
+.l-step-pair::after {
+  content: "";
+  width: 28px; /* same width as .l-step-num */
 }
 .l-step-ico {
   flex: 0 0 auto;
@@ -550,21 +565,21 @@ section { scroll-margin-top: 90px; }
   border-radius: 50%;
   background: var(--l-navy);
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: .85rem;
   display: inline-flex; align-items: center; justify-content: center;
   flex: 0 0 auto;
 }
 .l-step-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: .95rem;
   color: var(--l-navy);
   margin: 0 0 .35rem;
 }
 .l-step-desc { font-size: .82rem; color: var(--l-muted); margin: 0; line-height: 1.45; }
-/* gray chevron between steps – aligned with the icon-circle row */
+/* gray chevron between steps â€“ aligned with the icon-circle row */
 .l-step-arrow {
   flex: 0 0 auto;
   align-self: flex-start;
@@ -593,9 +608,10 @@ section { scroll-margin-top: 90px; }
 }
 .l-why-col { text-align: center; padding: 0 .5rem; }
 .l-why-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: .88rem;
+  text-transform: uppercase;
   color: #fff;
   margin: 0 0 .35rem;
 }
@@ -665,7 +681,7 @@ section { scroll-margin-top: 90px; }
 }
 /* text wordmark: orange VDH + white Glasservice */
 .l-footer-brand {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 900;
   font-size: 1.5rem;
   letter-spacing: .01em;
@@ -674,7 +690,7 @@ section { scroll-margin-top: 90px; }
 .l-brand-vdh { color: var(--l-orange); }
 .l-brand-glass { color: #fff; }
 .l-footer-tagline {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: .92rem;
   color: #fff;
@@ -702,7 +718,7 @@ section { scroll-margin-top: 90px; }
   color: #fff;
 }
 .l-footer-heading {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: .82rem;
   letter-spacing: .08em;
@@ -812,7 +828,7 @@ section { scroll-margin-top: 90px; }
   .l-section-title { font-size: 1.3rem; }
   .l-section-sub { font-size: .88rem; margin-bottom: 2rem; }
 
-  /* services: show the FULL photo on mobile — the source images are portrait
+  /* services: show the FULL photo on mobile â€” the source images are portrait
      (~0.62 aspect), so let the tile take the photo's natural aspect ratio
      instead of a short fixed-height tile that crops to a sliver */
   .l-service-card { flex-direction: column; }
